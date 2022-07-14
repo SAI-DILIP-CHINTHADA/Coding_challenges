@@ -12,9 +12,11 @@ function validAnagram(first, second){
     }
     let obj = {};
     for(let val of first){
+        //If the letter doesn't exist increment 1 and also for if exits too.
         obj[val] ? obj[val] +=1 : obj[val]=1;
     }
     for(let val of second){
+        // If the associated value 0 or not found it is not Anagram.
         if(!obj[val]){
             return false;
         }
