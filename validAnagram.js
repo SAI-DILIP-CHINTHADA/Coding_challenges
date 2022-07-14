@@ -24,3 +24,6 @@ function validAnagram(first, second){
     }
     return true;
 }
+
+
+validAnagram('anagram','nagaram')
